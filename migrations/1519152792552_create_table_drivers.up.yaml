@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "drivers"("d_name" text NOT NULL, "d_phone" bigint NOT NULL,
+      "vehicle_number" text NOT NULL, "rating" integer NOT NULL, "serial_no" serial
+      NOT NULL, PRIMARY KEY ("vehicle_number","d_phone") )
+  type: run_sql
+- args:
+    name: drivers
+  type: add_existing_table_or_view
